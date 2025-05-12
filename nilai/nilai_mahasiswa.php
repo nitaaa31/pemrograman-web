@@ -4,7 +4,7 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Menghitung Niali Matakuliah</title>
+        <title>Menghitung Nilai Matakuliah</title>
 </head>
 <body>
     <?php
