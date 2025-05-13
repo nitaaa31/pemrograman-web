@@ -242,3 +242,272 @@ label{
         .contact-button:hover {
             background-color: #0056b3;
         }
+
+.room-banner {
+            width: 100%;
+            max-height: 400px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .room-banner img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .room-list {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+
+        .room-item {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        .room-item:last-child {
+            border-bottom: none;
+        }
+
+        .room-image-container {
+            flex: 1 1 30%;
+            min-width: 200px;
+            margin-right: 20px;
+        }
+
+        .room-image {
+            width: 100%;
+            max-height: 200px;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .room-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        .room-details {
+            flex: 1 1 65%;
+            min-width: 250px;
+        }
+
+        .room-details h3 {
+            margin-top: 0;
+        }
+
+        .room-facilities ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .room-facilities ul li {
+            margin-bottom: 5px;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .room-price {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .book-button {
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .book-button:hover {
+            background-color: #1e7e34;
+        }
+
+ body {
+            color: #333; /* Warna teks default untuk body di halaman ini */
+        }
+
+        .location-banner {
+            width: 100%;
+            max-height: 400px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .location-banner img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .location-content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            color: #333; /* Warna teks di dalam location-content */
+        }
+
+        .location-content h1 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #555;
+            text-align: center;
+        }
+
+        .location-content h2 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+            margin-top: 20px;
+            color: #333; /* Warna teks untuk h2 */
+        }
+
+        .location-content p,
+        .location-content li {
+            color: #333; /* Warna teks untuk p dan li */
+        }
+
+        .address-details {
+            margin-bottom: 20px;
+        }
+
+        .address-details p {
+            line-height: 1.6;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 450px;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .directions ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .directions ul li {
+            margin-bottom: 10px;
+        }
+
+        .directions ul li ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+
+        .nearby-places ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .nearby-places ul li {
+            margin-bottom: 5px;
+        }
+
+  .contact-banner {
+            width: 100%;
+            max-height: 400px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .contact-banner img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .contact-content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .contact-details {
+            flex: 1 1 45%;
+            min-width: 300px;
+            margin-bottom: 20px;
+        }
+
+        .contact-details h2 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .contact-details p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .contact-form {
+            flex: 1 1 45%;
+            min-width: 300px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        .contact-form h2 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: calc(100% - 12px);
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .contact-form textarea {
+            height: 150px;
+        }
+
+        .contact-form button[type="submit"] {
+            background-color: #007bff;
+            /* Warna biru */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .contact-form button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
