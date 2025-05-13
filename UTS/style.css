@@ -1,7 +1,6 @@
 body{
     background-image: url("img/HOTEL.jpg");
-    background-size: 100% 100%;
-    background: white;
+    background-size: cover;
     margin: auto;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -10,9 +9,9 @@ body{
 .menu{
     font-family: tahoma;
     font-weight: bold;
-    height: 70px;
+    height: 100px;
     width: 100%;
-    background: #FA8072	;
+    background: #566990	;
     font-size: 20px;
 }
 
@@ -47,7 +46,7 @@ label{
 
 .menu ul li a:hover{
     display: block;
-    color: green;
+    color: CornflowerBlue   ;
     background: #222;
     box-shadow: inset 0px 0px 5px #000;
 }
@@ -86,3 +85,160 @@ label{
     border-radius: 10px;
 }
 
+.restoran-item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .restoran-item:nth-child(odd) {
+            flex-direction: row-reverse; 
+        }
+
+        .restoran-item img {
+            max-width: 40%; 
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+        }
+
+        .restoran-item .deskripsi {
+            width: 60%; 
+            padding: 10px;
+        }
+
+        .restoran-item h2 {
+            margin-top: 0;
+        }
+
+
+        .profile-main {
+            padding: 20px;
+            background-color: rgba(255,255,255,0.8);
+        }
+        .profile-image {
+            width: 100%;
+            max-height: 500px; 
+            object-fit: cover; 
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .profile-section {
+            margin-bottom: 20px;
+        }
+        .profile-section h2 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        .programmer-profile {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+
+        .programmer-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .programmer-info h2 {
+            margin-top: 0;
+        }
+
+        .contact-info {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-info li {
+            margin-bottom: 5px;
+        }
+
+
+        .meeting-content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+
+        .meeting-content h2 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        .meeting-content h2:first-of-type {
+            margin-top: 0;
+        }
+
+        .meeting-content .facility {
+            margin-bottom: 20px;
+        }
+
+        .facility-image {
+            width: 100%;
+            max-height: 300px;
+            overflow: hidden;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .facility-image img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .contact-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff; /* Warna biru */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .contact-button:hover {
+            background-color: #0056b3;
+        }
+
+  
+
+        .facility-image {
+            width: 100%;
+            max-height: 300px;
+            overflow: hidden;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .facility-image img {
+            width: 50%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .contact-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff; /* Warna biru */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .contact-button:hover {
+            background-color: #0056b3;
+        }

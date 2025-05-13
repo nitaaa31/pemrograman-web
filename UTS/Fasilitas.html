@@ -1,49 +1,206 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Profile</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fasilitas Hotel Pacific</title>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+        .facility-section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+
+        .facility-section h1 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        .facility-item {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .facility-item:nth-child(odd) .facility-image-container {
+            order: 1;
+            padding-right: 20px;
+        }
+
+        .facility-item:nth-child(odd) .facility-text {
+            order: 2;
+            padding-left: 20px;
+        }
+
+        .facility-item:nth-child(even) .facility-image-container {
+            order: 2;
+            padding-left: 20px;
+            text-align: right;
+        }
+
+        .facility-item:nth-child(even) .facility-text {
+            order: 1;
+            padding-right: 20px;
+        }
+
+        .facility-image-container {
+            flex: 1 1 40%;
+            /* Adjust the percentage as needed */
+            min-width: 300px;
+            /* Minimum width for the image */
+        }
+
+        .facility-image {
+            width: 100%;
+            max-height: 400px;
+            /* Increased height for better display */
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow for depth */
+        }
+
+        .facility-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            /* Ensure images cover the area */
+        }
+
+        .facility-text {
+            flex: 1 1 60%;
+            /* Adjust the percentage as needed */
+            min-width: 300px;
+            /* Minimum width for the text */
+        }
+
+        .facility-text h2 {
+            margin-top: 0;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        /* Style untuk restoran (jika ingin dibedakan) */
+        .restaurant-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .restaurant-list li {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 
 <body>
     <nav class="menu">
-        <label> HOTEL PACIFIC</label>
+        <label>HOTEL PACIFIC</label>
         <ul>
-            <li> <a href="HOTEL.html"></a></li>
-            <li> <a href="#"> About Us </a>
+            <li><a href="HOTEL.html">Home</a></li>
+            <li><a href="#">About Us</a>
                 <ul class="dropdown">
-                    <li> <a href="Profile.html"> Profile</a></li>
-                    <li> <a href="Restoran.html"> Restoran</a></li>
-                    <li> <a href="Fasilitas.html"> Fasilitas</a></li>
-                    <li> <a href="Conctact.html"> Contact</a></li>
+                    <li><a href="Profile.html">Profile</a></li>
+                    <li><a href="Restoran.html">Restoran</a></li>
+                    <li class="active"><a href="Fasilitas.html">Fasilitas</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
                 </ul>
-                </li>
             </li>
-            <li> <a href="#"> Room</a></li>
-            <li> <a href="#"> Meeting/Event</a></li>
-            <li> <a href="#"> Location</a></li>
-            <li> <a href="#"> Profile Programmer</a></li>
+            <li><a href="Room.html">Room</a></li>
+            <li><a href="Meeting.html">Meeting/Event</a></li>
+            <li><a href="Location.html">Location</a></li>
+            <li><a href="Profile Programmer.html">Profile Programmer</a></li>
         </ul>
     </nav>
 
-<article>
-    <main style="padding: 20px; background-color: rgba(255,255,255,0.8);">
+    <main>
+        <section class="facility-section">
+            <h1>Fasilitas Hotel Pacific</h1>
+            <p>
+                Hotel Pacific menawarkan berbagai fasilitas untuk memastikan pengalaman menginap Anda nyaman dan tak terlupakan.
+                Dari relaksasi hingga kebugaran, kami menyediakan semua yang Anda butuhkan.
+            </p>
+        </section>
 
-    <h1>FASILITAS</h1>
-    <p>Pacific Palace Hotel Batam menawarkan beragam pilihan restoran dan lounge yang dapat memenuhi selera kuliner Anda selama menginap. Berikut adalah informasi detail mengenai fasilitas bersantap yang tersedia:</p>
-    <p>Athena Restaurant</p>
-    <p>Terletak di lantai 1 hotel, Athena Restaurant menyajikan hidangan Asia dan Barat dengan suasana yang nyaman dan tenang. Restoran ini buka 24 jam dan memiliki kapasitas hingga 259 tamu. Menu yang ditawarkan beragam, termasuk buffet yang berubah setiap hari, serta pilihan a la carte untuk sarapan, makan siang, dan makan malam.</p>
-    <p>Golden Palace Restaurant</p>
-    <p>Golden Palace adalah restoran Tionghoa yang menyajikan masakan tradisional dengan cita rasa khas, menggunakan bumbu seperti jahe, gula, cuka, dan kecap. Salah satu hidangan andalannya adalah dim sum. Restoran ini memiliki kapasitas hingga 260 tamu dan buka setiap hari dari pukul 10:00 hingga 22:00. </p>
-    <p>Neptune Lounge</p>
-    <p>Terletak di lantai dasar hotel, Neptune Lounge menawarkan suasana eksklusif dengan hiburan musik akustik, aneka camilan, dan koktail malam. Tempat ini cocok untuk bersantai setelah seharian beraktivitas.</p>
-    <p>Make Up The Dessert Boat</p>
-    <p>Sebuah konsep unik yang menyajikan berbagai pilihan makanan penutup dalam suasana yang menarik. Tempat ini cocok bagi pecinta makanan manis yang ingin mencoba berbagai dessert dalam satu tempat.</p>
-    <p>Another Side of the Buffet</p>
-    <p>Area buffet tambahan yang menawarkan variasi hidangan berbeda dari buffet utama, memberikan lebih banyak pilihan bagi tamu untuk menikmati berbagai jenis masakan.</p>
-    
+        <section class="facility-section">
+            <div class="facility-item">
+                <div class="facility-image-container">
+                    <div class="facility-image">
+                        <img src="img/kolam_renang.jpg" alt="Kolam Renang Indoor">
+                    </div>
+                </div>
+                <div class="facility-text">
+                    <h2>Kolam Renang</h2>
+                    <p>
+                        Bersantai dan segarkan diri Anda di kolam renang indoor kami yang luas dan nyaman.
+                        Dengan air tawar yang jernih dan suasana yang menenangkan, ini adalah tempat yang sempurna untuk melepas penat.
+                    </p>
+                </div>
+            </div>
 
-</article>
+            <div class="facility-item">
+                <div class="facility-image-container">
+                    <div class="facility-image">
+                        <img src="img/spa.jpg" alt="Adorabella Spa">
+                    </div>
+                </div>
+                <div class="facility-text">
+                    <h2>Adorabella Spa & Salon</h2>
+                    <p>
+                        Manjakan diri Anda dengan berbagai perawatan tubuh dan kecantikan yang menenangkan di Adorabella Spa & Salon.
+                        Terapis kami yang berpengalaman akan membantu Anda merasa segar dan berenergi kembali.
+                    </p>
+                </div>
+            </div>
+
+            <div class="facility-item">
+                <div class="facility-image-container">
+                    <div class="facility-image">
+                        <img src="img/gym.jpg" alt="Pusat Kebugaran">
+                    </div>
+                </div>
+                <div class="facility-text">
+                    <h2>Pusat Kebugaran</h2>
+                    <p>
+                        Tetap bugar dan sehat selama Anda menginap di pusat kebugaran kami yang dilengkapi dengan peralatan modern.
+                        Instruktur kami yang profesional siap membantu Anda mencapai tujuan kebugaran Anda.
+                    </p>
+                </div>
+            </div>
+
+            <div class="facility-item">
+                <div class="facility-image-container">
+                    <div class="facility-image">
+                        <img src="img/sauna.jpg" alt="Sauna dan Jacuzzi">
+                    </div>
+                </div>
+                <div class="facility-text">
+                    <h2>Sauna dan Jacuzzi</h2>
+                    <p>
+                        Lepaskan ketegangan dan nikmati relaksasi yang mendalam di sauna dan jacuzzi kami.
+                        Fasilitas ini dirancang untuk membantu Anda meremajakan tubuh dan pikiran.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="facility-section">
+            <h2>Restoran & Lounge</h2>
+            <p>Hotel Pacific juga menawarkan beragam pilihan tempat makan dan bersantai yang memanjakan selera Anda:</p>
+            <ul class="restaurant-list">
+                <li><b>Athena Restaurant:</b> Menyajikan hidangan Asia dan Barat yang lezat dalam suasana yang elegan.</li>
+                <li><b>Golden Palace Restaurant:</b> Menawarkan masakan Tionghoa autentik dengan dim sum yang menggugah selera.</li>
+                <li><b>Neptune Lounge:</b> Tempat yang sempurna untuk bersantai dengan koktail dan hiburan musik live.</li>
+                <li><b>Make Up The Dessert Boat:</b> Nikmati berbagai pilihan dessert yang menggoda dalam konsep yang unik.</li>
+                <li><b>Another Side of the Buffet:</b> Area buffet tambahan dengan variasi hidangan untuk pengalaman bersantap yang tak terlupakan.</li>
+            </ul>
+        </section>
+    </main>
 </body>
-</html>
 
+</html>
