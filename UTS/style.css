@@ -1,6 +1,7 @@
 body{
     background-image: url("img/HOTEL.jpg");
     background-size: 100% 100%;
+    background: white;
     margin: auto;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -84,3 +85,4 @@ label{
     margin: 50px auto;
     border-radius: 10px;
 }
+
